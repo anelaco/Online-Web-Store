@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+    <link rel ="stylesheet" href="stajlovstajl.css" class="css">
+    <link href = "https://fonts.googleapis.com/css2?family=Popins.:wght@300;400;500;600
+                700%&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0
+                /css/font-awesome.min.css">
+                <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                <link rel="icon" href="shoes.ico">
+    <title> Product Details</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><form>
+                    <input
+                      type="text"
+                      name=""
+                      id="search-item"
+                      placeholder="Search product"
+                      onkeyup="search()"
+                    />
+                  </form></li> 
+                <b><li><a href="storehome.html">HOME</a></li></b>
+                <b> <li><a href="productNike.html">NIKE</a></li></b>
+                <b> <li><a href="productJordan.html">AIR JORDAN</a></li></b>
+                <b><li><a href="productAdidas.html">ADIDAS</a></li></b>
+                <b><li><a href="inquiry.html">INQUIRY</a></li></b>
+                <!--<b><li id="cart-icon"><a href="">CART</a></li></b>
+                <b><li><a href="public/inquiry.html">Inquiries</a></li></b>
+                <b><li class="cart"><a href="shoppingCart.html"><ion-icon name="basket"></ion-icon>CART<span>0</span></a></li></b>-->
+            </ul>
+        </nav>
+        <i style="margin-left: 40px; margin-right: 25px; font-size: 27px; cursor: pointer;" class='bx bxs-shopping-bag' id="cart-icon"></i>
+        <!--<img src="menu.png" class = "menu-icon">-->
+    </div>
+<div class = "small-container single-product">
+    <div class = "row">
+        <div class="col-2">
+            <img src = "images/patikeAdidas.jpg" width="100%" id="ProductPicture">
+            <div class ="small-img-row">
+                <div class = "small-img-col">
+                    <img src = "images/patikeAdidas3.jpg" width = "100%" class = "small-img">
+                </div>    
+                <div class = "small-img-col">
+                    <img src = "images/patikeAdidas4.jpg" width = "100%" class = "small-img">
+                </div>  
+                <div class = "small-img-col">
+                    <img src = "images/patikeAdidas2.jpg" width = "100%" class = "small-img">
+                </div>  
+                <div class = "small-img-col">
+                    <img src = "images/patikeAdidas5.jpg" width = "100%" class = "small-img">
+                </div>  
+            </div>
+        </div>
+        <div class = "col-2">
+            <p> Home / Adidas Offer</p>
+            <h1>Shoes by Adidas</h1>
+            <h4>$150.00</h4>
+            <select>
+              <option> Select Size</option>
+              <option> 47</option> 
+              <option> 46</option> 
+              <option> 45 </option> 
+              <option> 44</option> 
+              <option> 43</option> 
+              <option> 42</option> 
+              <option> 41</option> 
+              <option> 40</option>  
+            </select>
+            <input type="number " value="1">
+            <a href="" class = "dugme btn-cart">Add to cart</a>
+            <h3> Product Description <i class="fa fa-indent"></i></h3> 
+            <br>
+            <p>adidas AG (adidas) designs, manufactures and markets athletic and sports lifestyle products. The company's product portfolio includes footwear, apparel and accessories such as bags, sun glasses, fitness equipment, and balls. </p>
+
+        </div>
+
+         <!-- SHOPPING CART-->
+         <div class="cart">
+            <h2 class="cart-title">YOUR CART</h2>
+
+            <!-- CART CONTENT -->
+            <div class="cart-content">
+               
+            </div>
+
+            <!-- $ TOTAL $ -->
+            <div class="total">
+                <div class="total-title">TOTAL</div>
+                <div class="total-price">$0</div>
+            </div>
+
+            <!-- PURCHASE BUTTON -->
+            <button type="button" class="purchase-btn">BUY NOW</button>
+
+            <!-- CLOSE CART -->
+            <i class='bx bx-x' id="close-cart"></i>
+        </div>
+
+<script>
+
+    var ProductImg = document.getElementById("ProductPicture");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+
+
+
+
+</script>
+<script src="cart.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!--<script src="storeHome.js"></script>-->
+        <script src="appTwo.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    background: #549ce0;
+}
+input.placeholder{
+    text-align: center;
+}
+
+.form-container{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(105, 180, 223);
+}
+
+.contact-form{
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 600px;
+}
+
+input,
+textarea{
+    width: 100%;
+    margin-top: 16px;
+    border: 1px solid black;
+}
+
+.submit{
+
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.submit:hover{
+
+    opacity: 1;
+    color:#549ce0;
+}
+
+.container{
+    width: 100%;
+    min-height: 102vh;
+    background: linear-gradient( 45deg, #549ce0, #b7dafc);
+    color: rgb(39, 71, 177);
+    position: relative;
+}
+
+.navigation{
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -15px;
+    margin-right: 12px;
+}
+
+.menu-icon{
+    cursor: pointer;
+    width: 30px;
+    margin-left: 60px;
+}
+
+.nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    align-items: right;
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    font-style: italic;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: darkblue;
+    text-shadow: 2px 2px white;
+    font-size: 19px;
+    padding: 5px 2px;
+}
+
+nav ul li a:hover{
+    color: white;
+    text-shadow: 2px 2px darkblue;
+}
+
+i:hover{
+    color: white;
+    text-shadow: 2px 2px darkblue;
+}
+
+
+
+.rows{
+    width: 80%;
+    min-height: 85vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columns{
+    margin: 20px 0;
+    flex-basis: 50%;
+    min-width: 300px;
+    height: 100%;
+    position: relative;
+}
+
+.text-box{
+    max-width: 400px;
+    margin-top: 100px;
+}
+
+.text-box h4{
+    color: rgb(253, 253, 253);
+}
+
+.text-box h1{
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
